@@ -2,7 +2,7 @@ index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationid
 0,Outskirts - Hidden Rat Tunnel Magic Bolt,Outskirts,Magic Bolt,0x7be5f,0x79380,open,0
 1,Outskirts - Hidden Pipe Heart,Outskirts,Heart,0x78ea0,0x7cd30,open,0
 2,Outskirts - Underwater Pipe Maze Heart,Outskirts,Heart,0x7909b,0x7d4a4,open,0
-3,Lower Outskirts - Ceiling Baseballs,Outskirts,Baseball,0x7ba7f,0x7d494,open,0
+3,Lower Outskirts - Ceiling Baseball,Outskirts,Baseball,0x7ba7f,0x7d494,open,0
 4,Lower Outskirts - Wallkick Climb Magic Bolt,Outskirts,Magic Bolt,0x7bc2c,0x7c881,open,0
 5,Outskirts - Baseball Alter,Outskirts,Baseball,0x78e52,0x7d51c,open,0
 6,Outskirts - Hidden Cave Heart,Outskirts,Heart,0x78e2b,0x7ce5c,open,0

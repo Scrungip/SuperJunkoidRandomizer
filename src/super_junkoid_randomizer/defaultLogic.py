@@ -153,20 +153,20 @@ junkly = LogicShortcut(lambda loadout: (
 ))
 
 location_logic: LocationLogicType = {
-    "Hidden Rat Tunnel Magic Bolt": lambda loadout: (
+    "Outskirts - Hidden Rat Tunnel Magic Bolt": lambda loadout: (
             (RatCloak in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Hidden Pipe Heart": lambda loadout: (
+    "Outskirts - Hidden Pipe Heart": lambda loadout: (
         True
     ),
-    "Pipe Maze Heart": lambda loadout: (
+    "Outskirts - Underwater Pipe Maze Heart": lambda loadout: (
             (MagicBroom in loadout) or
             (((RatCloak in loadout) or Sparksuit in loadout) and
              ((Feather in loadout) or (Wallkicks in loadout))) or
             ((Wallkicks in loadout) and (SanguineFin in loadout))
     ),
-    "Ceiling Baseballs": lambda loadout: (
+    "Lower Outskirts - Ceiling Baseball": lambda loadout: (
             (lowerOutskirts in loadout) and
             ((Wallkicks in loadout) or (MagicBroom in loadout)) and
             (
@@ -175,155 +175,158 @@ location_logic: LocationLogicType = {
                     ((BloodGem in loadout) and (IceGem in loadout))
             )
     ),
-    "Wall Jump Climb Magic Bolt": lambda loadout: (
+    "Lower Outskirts - Wallkick Climb Magic Bolt": lambda loadout: (
             (lowerOutskirts in loadout) and
             ((Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Outskirts Baseball Alter": lambda loadout: (
+    "Outskirts - Baseball Alter": lambda loadout: (
             (Baseball in loadout) and (RatCloak in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Hidden Heart": lambda loadout: (
+    "Outskirts - Hidden Cave Heart": lambda loadout: (
             (RatCloak in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Under Spider Magic Bolt": lambda loadout: (
+    "Outskirts - Spider's Magic Bolt": lambda loadout: (
             (Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout)
     ),
-    "Hidden Underwater Heart": lambda loadout: (
+    "Outskirts - Hidden Underwater Heart": lambda loadout: (
             (Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout)
     ),
-    "Feather": lambda loadout: (
+    "Outskirts - Feather": lambda loadout: (
             (Feather in loadout) or
             ((SanguineFin in loadout) and ((Wallkicks in loadout) or (MagicBroom in loadout)))
     ),
-    "Rat Cloak": lambda loadout: (
+    "Outskirts - Rat Cloak": lambda loadout: (
             (Wallkicks in loadout) or (MagicBroom in loadout) or
             ((RatCloak in loadout) and (Feather in loadout))
     ),
-    "Rat Burst": lambda loadout: (
+    "Lower Outskirts - Rat Burst": lambda loadout: (
             (lowerOutskirts in loadout) and
             ((canRatBurst in loadout) or ((Wallkicks in loadout) and (RatCloak in loadout)))
     ),
-    "Outside Idol Sparksuit": lambda loadout: (
+    "Lower Outskirts - False Idol Entrance Sparksuit": lambda loadout: (
             (lowerOutskirts in loadout) and
             (Sparksuit in loadout)
     ),
-    "Wallkicks": lambda loadout: (
+    "Lower Outskirts - Wallkicks": lambda loadout: (
             (lowerOutskirts in loadout) and
             ((Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Left Shaft Heart": lambda loadout: (
+    "False Idol - Left Shaft Heart": lambda loadout: (
             (enterIdol in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Right Shaft Heart": lambda loadout: (
+    "False Idol - Right Shaft Heart": lambda loadout: (
             (enterIdol in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Wave Bangle": lambda loadout: (  # Deep Purple
+    "Deep Purple - Wave Bangle": lambda loadout: (  # Deep Purple
             (deepPurple in loadout) and (RatCloak in loadout)
     ),
-    "Left Idol Magic Bolt": lambda loadout: (
+    "False Idol - Left Hall Magic Bolt": lambda loadout: (
             (enterIdol in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Hidden Shaft Heart": lambda loadout: (
+    "False Idol - Hidden Shaft Heart": lambda loadout: (
             (sporeSpawn in loadout) and
             ((RatDasher in loadout) or (Sparksuit in loadout)) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Lower Idol Ceiling Magic Bolt": lambda loadout: (
+    "False Idol - Ceiling Crevice Magic Bolt": lambda loadout: (
             (sporeSpawn in loadout) and
             (((Feather in loadout) and (Wallkicks in loadout)) or (MagicBroom in loadout))
     ),
-    "Under Alter Magic Bolt": lambda loadout: (
+    "False Idol - Under Alter Magic Bolt": lambda loadout: (
         (sporeSpawn in loadout)
     ),
-    "First Sparksuit": lambda loadout: (
+    "False Idol - Dead End Sparksuit": lambda loadout: (
             (sporeSpawn in loadout) and (Sparksuit in loadout)
     ),
-    "False Idol Baseball Alter": lambda loadout: (
+    "False Idol - Baseball Alter": lambda loadout: (
         (sporeSpawn in loadout)
     ),
-    "Spike Spark Heart": lambda loadout: (
+    "False Idol - Spike Spark Heart": lambda loadout: (
             (sporeSpawn in loadout) and (SanguineFin in loadout) and (RatDasher in loadout) and (Sparksuit in loadout)
     ),
-    "Junkoon Lucky Frog": lambda loadout: (
+    "False Idol - Defiled Junko's Lucky Frog": lambda loadout: (
         (junkoon in loadout)
     ),
-    "Purple Locket": lambda loadout: (
+    "False Idol - Purple Locket": lambda loadout: (
             (sporeSpawn in loadout) and (SanguineFin in loadout) and (RatDasher in loadout) and (Sparksuit in loadout)
     ),
-    "Upper Middle Idol Baseball": lambda loadout: (
+    "False Idol - Idol's Heart Baseball": lambda loadout: (
         (sporeSpawn in loadout)
     ),
-    "Upper Deep Purple Baseball": lambda loadout: (  # Start of Deep Purple
+    "Deep Purple - Lavafall Baseball": lambda loadout: (  # Start of Deep Purple
             (deepPurple in loadout) and (canRatBurst in loadout) and (Sparksuit in loadout) and
             ((Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Toxic Heart": lambda loadout: (
+    "Deep Purple - Big League Glove": lambda loadout: (
+            (crateria in loadout) and (canRatBurst in loadout) and (Feather in loadout)
+    ),
+    "Deep Purple - Toxic Heart": lambda loadout: (
             (crateria in loadout) and (RatCloak in loadout) and
             ((MagicBroom in loadout) or ((Feather in loadout) and (IceGem in loadout)))
     ),
-    "Mother Brain Sparksuit": lambda loadout: (
+    "Deep Purple - Mother Brain Sparksuit": lambda loadout: (
             ((canRatBurst in loadout) and (Wallkicks in loadout) and (Feather in loadout)) or
             ((crateria in loadout) and (canRatBurst in loadout))
     ),
-    "Under Stairs Magic Bolt": lambda loadout: (
+    "Deep Purple - Under Stairs Magic Bolt": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             (((Feather in loadout) and Wallkicks in loadout) or (MagicBroom in loadout)) and
             (PurpleLocket in loadout)
     ),
-    "Water Climb Heart": lambda loadout: (
+    "Deep Purple - Bloodbath Climb Heart": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Deep Magic Bolt": lambda loadout: (
+    "Deep Purple - Dashingly Ratty Magic Bolt": lambda loadout: (
             (crateria in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
             and (SanguineFin in loadout) and (canRatDash in loadout)
     ),
-    "Fake Map Heart": lambda loadout: (
+    "Deep Purple - Dreamy Crateria Map Station Heart": lambda loadout: (
             (crateria in loadout) and (RatCloak in loadout) and
             ((Feather in loadout) or (SanguineFin in loadout))
     ),
-    "Crateria Heart": lambda loadout: (
+    "Deep Purple - Dreamy Crateria Power Bomb Heart": lambda loadout: (
             (crateria in loadout) and
             (canRatBurst in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Gem Of Storms": lambda loadout: (
+    "Deep Purple - Gem of Storms": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout)) and
             (StormsGem in loadout) and
             (loadout.count(Heart) >= 8) and (loadout.count(Heart) >= 5)
     ),
-    "Magic Broom": lambda loadout: (
+    "Deep Purple - Magic Broom": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             (loadout.count(Heart) >= 8) and (loadout.count(MagicBolt) >= 5)
     ),
-    "Deep Purple Baseball Alter": lambda loadout: (
+    "Deep Purple - Baseball Alter": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             (((Feather in loadout) and Wallkicks in loadout) or (MagicBroom in loadout)) and
             (PurpleLocket in loadout)
     ),
-    "Lava Magic Bolt": lambda loadout: (
+    "Deep Purple - Lavabed Magic Bolt": lambda loadout: (
             (crateria in loadout) and (canRatBurst in loadout) and
             (((Feather in loadout) and Wallkicks in loadout) or (MagicBroom in loadout)) and
             (PurpleLocket in loadout)
     ),
-    "Junkly Lucky Frog": lambda loadout: (
+    "Deep Purple - Profane Junko's Lucky Frog": lambda loadout: (
         (junkly in loadout)
     ),
-    "Behind Throne Heart": lambda loadout: (  # Start Of Ice Castle
+    "Ice Castle - Behind Throne Heart": lambda loadout: (  # Start Of Ice Castle
             (
                     (((Feather in loadout) or (Wallkicks in loadout)) and (IceGem in loadout)) or
                     (MagicBroom in loadout)
             ) and
             (RatCloak in loadout)
     ),
-    "Under Shaft Heart": lambda loadout: (
+    "Ice Castle - Hidden Cave Heart": lambda loadout: (
             (
                     (canRatBurst in loadout) and
                     ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
@@ -337,30 +340,30 @@ location_logic: LocationLogicType = {
             )
 
     ),
-    "Freeze Boost Heart": lambda loadout: (
+    "Ice Castle - Freeze Boost Heart": lambda loadout: (
             ((canRatBurst in loadout) and (canRatDash in loadout) and (IceGem in loadout)) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Spike Jump Magic Bolt": lambda loadout: (
+    "Ice Castle - Spike Jump Magic Bolt": lambda loadout: (
             ((canRatBurst in loadout) and (
                     (Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout))) or
             ((((Feather in loadout) or (Wallkicks in loadout)) and (IceGem in loadout)) or
              (MagicBroom in loadout)) or (lowerOutskirts in loadout)
     ),
-    "Right Shaft Magic Bolt": lambda loadout: (
+    "Ice Castle - Dreamer's Shaft Magic Bolt": lambda loadout: (
             (Baseball in loadout) and
             (lowerIceCastle in loadout) and
             (RatCloak in loadout) and
             (((Sparksuit in loadout) and (canRatBurst in loadout)) or (
                     (IceGem in loadout) and (Feather in loadout)) or (MagicBroom in loadout))
     ),
-    "Crystal Cave Sparksuit": lambda loadout: (
+    "Ice Castle - Crystal Cave Sparksuit": lambda loadout: (
             (Sparksuit in loadout) and
             (lowerIceCastle in loadout) and
             (RatCloak in loadout) and
             (Feather in loadout)
     ),
-    "Frozen Cave Baseball": lambda loadout: (
+    "Ice Castle - Frozen Speedway Cave Baseball": lambda loadout: (
             (lowerIceCastle in loadout) and (RatCloak in loadout) and
             (
                     (canRatBurst in loadout) or
@@ -368,7 +371,7 @@ location_logic: LocationLogicType = {
             ) and
             (((Feather in loadout) and (IceGem in loadout)) or (MagicBroom in loadout))
     ),
-    "Water Cave Magic Bolt": lambda loadout: (
+    "Ice Castle - Bleeder's Cave Magic Bolt": lambda loadout: (
             (lowerIceCastle in loadout) and (RatCloak in loadout) and
             (
                     (canRatBurst in loadout) or
@@ -376,56 +379,56 @@ location_logic: LocationLogicType = {
             ) and
             ((Feather in loadout) or (Wallkicks in loadout) or (MagicBroom in loadout)) and (SanguineFin in loadout)
     ),
-    "Snowmen Mini-Boss Heart": lambda loadout: (
+    "Ice Castle - Snowmen's Heart": lambda loadout: (
         (lowerIceCastle in loadout)
     ),
-    "Rat Dasher": lambda loadout: (
+    "Ice Castle - Rat Dasher": lambda loadout: (
             (((Feather in loadout) and (IceGem in loadout)) or
              (MagicBroom in loadout)) and (canRatDash in loadout)
     ),
-    "Gem Of Ice": lambda loadout: (
+    "Ice Castle - Gem of Ice": lambda loadout: (
             (killCrocomire in loadout) and (IceGem in loadout)
     ),
-    "Dreamer's Crown": lambda loadout: (
+    "Ice Castle - Dreamer's Crown": lambda loadout: (
             (lowerIceCastle in loadout) and (Baseball in loadout) and (Sparksuit in loadout) and
             (canRatBurst in loadout) and (loadout.count(Heart) >= 5)
     ),
-    "Ice Castle Baseball Alter": lambda loadout: (
+    "Ice Castle - Baseball Alter": lambda loadout: (
             (lowerIceCastle in loadout) and (Baseball in loadout)
     ),
-    "Junkraid Lucky Frog": lambda loadout: (
+    "Ice Castle - Immodest Junko's Lucky Frog": lambda loadout: (
         (killJunkraid in loadout)
     ),
-    "Under Corpses Heart": lambda loadout: (  # Start Of Blood Bethel
+    "Blood Bethel - Under Corpses Heart": lambda loadout: (  # Start Of Blood Bethel
             (bloodBethel in loadout) and (canRatBurst in loadout)
     ),
-    "Hidden Magic Bolt": lambda loadout: (
+    "Blood Bethel - False Wall Magic Bolt": lambda loadout: (
         (bloodBethel in loadout)
     ),
-    "Shaft Heart": lambda loadout: (
+    "Blood Bethel - Shaft Heart": lambda loadout: (
         (bloodBethel in loadout)
     ),
-    "Magic Soap": lambda loadout: (
+    "Blood Bethel - Magic Soap": lambda loadout: (
             (bloodBethel in loadout) and (canRatBurst in loadout) and
             ((Wallkicks in loadout) or (MagicBroom in loadout))
     ),
-    "Lower Hidden Magic Bolt": lambda loadout: (
+    "Blood Bethel - Rock Bottom Magic Bolt": lambda loadout: (
         (bloodBethel in loadout)
     ),
-    "Behind Blocks Baseball": lambda loadout: (
+    "Blood Bethel - Bloody Barrier's Baseball": lambda loadout: (
             (bloodBethel in loadout) and (BloodGem in loadout) and (canRatBurst in loadout)
     ),
-    "Cave Magic Bolt": lambda loadout: (
+    "Blood Bethel - Speedster Cave Magic Bolt": lambda loadout: (
             (bloodBethel in loadout) and
             ((canRatDash in loadout) or (Sparksuit in loadout))
     ),
-    "Gem Of Blood": lambda loadout: (
+    "Blood Bethel - Gem of Blood": lambda loadout: (
             (botwoon in loadout) and (BloodGem in loadout)
     ),
-    "Hidden Above Door Sparksuit": lambda loadout: (
+    "Blood Bethel - Hidden Air Pocket Sparksuit": lambda loadout: (
             (bloodBethel in loadout) and (Sparksuit in loadout)
     ),
-    "Hidden Table Heart": lambda loadout: (
+    "Blood Bethel - Hidden Table Heart": lambda loadout: (
             (bloodBethel in loadout) and
             (
                     ((SanguineFin in loadout) and ((Wallkicks in loadout) or (MagicBroom in loadout))) or
@@ -433,26 +436,23 @@ location_logic: LocationLogicType = {
             ) and
             (Baseball in loadout) and (RatCloak in loadout)
     ),
-    "Sanguine Fin": lambda loadout: (
+    "Blood Bethel - Sanguine Fin": lambda loadout: (
         (bloodBethel in loadout)
     ),
-    "OatsnGoats Heart": lambda loadout: (
+    "Blood Bethel - Oatsngoats Heart": lambda loadout: (
             ((bloodBethel in loadout) and (BloodGem in loadout) and
              ((SanguineFin in loadout) or ((Wallkicks in loadout) or (MagicBroom in loadout)))) or
             (enterIdolIce in loadout)
     ),
-    "Blood Bethel Baseball Alter": lambda loadout: (
+    "Blood Bethel - Baseball Alter": lambda loadout: (
             (bloodBethel in loadout) and (Baseball in loadout)
     ),
-    "Junkgon Lucky Frog": lambda loadout: (
+    "Blood Bethel - Obscene Junko's Lucky Frog": lambda loadout: (
         (killJunkgon in loadout)
     ),
-    "Gem Of Death": lambda loadout: (  # SHEOL
+    "Sheol - Gem of Death": lambda loadout: (  # SHEOL
             (killJunkraid in loadout) and (killJunkgon in loadout) and (junkoon in loadout) and (junkly in loadout) and
             (loadout.count(MagicBolt) >= 15)
-    ),
-    "Big League Glove": lambda loadout: (
-            (crateria in loadout) and (canRatBurst in loadout) and (Feather in loadout)
     )
 }
 
