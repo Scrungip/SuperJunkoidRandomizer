@@ -50,7 +50,7 @@ class Items:
                    b"\x5f\xef",
                    b"\xb3\xef",
                    b"\x00")
-    BloodGem = ("Gem Of Blood",
+    BloodGem = ("Gem of Blood",
                 b"\xfb\xee",
                 b"\x4f\xef",
                 b"\xa3\xef",
@@ -65,7 +65,7 @@ class Items:
     #           b"\x53\xef",
     #           b"\xa7\xef",
     #           b"\x00")
-    IceGem = ("Gem Of Ice",
+    IceGem = ("Gem of Ice",
               b"\xef\xee",
               b"\x43\xef",
               b"\x97\xef",
@@ -75,7 +75,7 @@ class Items:
                      b"\x6b\xef",
                      b"\xbf\xef",
                      b"\x00")
-    StormsGem = ("Gem Of Storms",
+    StormsGem = ("Gem of Storms",
                  b"\x13\xef",
                  b"\x13\xef",
                  b"\xbb\xef",
@@ -85,7 +85,7 @@ class Items:
                  b"\x73\xef",
                  b"\xc7\xef",
                  b"\x00")
-    DeathGem = ("Gem Of Death",
+    DeathGem = ("Gem of Death",
                 b"\xeb\xee",
                 b"\x3f\xef",
                 b"\x93\xef",
